@@ -30,19 +30,23 @@
   overflow-y: auto;
 }
 .chat-section {
-  flex: 0.4;
-  background: var(--bg-light);
-  border-left: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
+    height: 100%; /* Lock to the main-content height */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent the whole section from scrolling */
 }
+
 .chat-history {
-  flex: 1;
-  padding: 1.5rem;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    flex: 1; /* This tells the history to take all available space */
+    overflow-y: auto; /* This makes ONLY the messages scroll */
+    padding: 1.5rem;
+}
+
+.chat-input-area {
+    flex-shrink: 0; /* Prevents the input box from getting squashed or hidden */
+    background: white;
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .message {
@@ -67,13 +71,6 @@
   border-bottom-left-radius: 2px;
 }
 
-.chat-input-area {
-  padding: 1.5rem;
-  background: white;
-  border-top: 1px solid var(--border-color);
-  display: flex;
-  gap: 10px;
-}
 /* Add this to your CSS */
 .sentiment-chip {
   padding: 8px 16px;
