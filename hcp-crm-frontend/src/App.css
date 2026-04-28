@@ -1,0 +1,90 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  background: var(--white);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Update your App.css */
+.main-content {
+  display: grid;
+  grid-template-columns: 65% 35%; /* Fixed columns */
+  height: calc(100vh - 60px);
+  background-color: #f8fafc; /* Subtle grey background */
+}
+
+.form-section {
+  background: white;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+.chat-section {
+  flex: 0.4;
+  background: var(--bg-light);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+.chat-history {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.message {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: var(--primary);
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+.message.ai {
+  align-self: flex-start;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-bottom-left-radius: 2px;
+}
+
+.chat-input-area {
+  padding: 1.5rem;
+  background: white;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  gap: 10px;
+}
+/* Add this to your CSS */
+.sentiment-chip {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s;
+  background: white;
+  margin-right: 10px;
+}
+
+.sentiment-chip.active.Positive { background: #dcfce7; color: #166534; border-color: #166534; }
+.sentiment-chip.active.Neutral { background: #f1f5f9; color: #475569; border-color: #475569; }
+.sentiment-chip.active.Negative { background: #fee2e2; color: #991b1b; border-color: #991b1b; }
