@@ -99,9 +99,9 @@ AI-powered-CRM-Module/
 
 ---
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 
-### 1️⃣ Prerequisites
+### 1️. Prerequisites
 
 * Python 3.10+
 * Node.js 18+
@@ -109,7 +109,7 @@ AI-powered-CRM-Module/
 
 ---
 
-### 2️⃣ Backend Setup
+### 2️2. Backend Setup
 
 ```bash
 cd backend
@@ -125,7 +125,7 @@ GROQ_API_KEY=your_api_key_here
 Run backend:
 
 ```bash
-python main.py
+uvicorn main:app --reload
 ```
 
 ---
@@ -141,7 +141,7 @@ npm run dev
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. User enters interaction via chat
 2. LangGraph agent processes input
@@ -158,7 +158,7 @@ npm run dev
 
 ---
 
-## 🔧 LangGraph Tools Implemented
+##  LangGraph Tools Implemented
 
 * **Log Interaction Tool**
   Extracts structured data from natural language and stores it
@@ -177,7 +177,7 @@ npm run dev
 
 ---
 
-## ⚙️ Technical Highlights
+##  Technical Highlights
 
 ### 1. Sync Node Strategy
 
