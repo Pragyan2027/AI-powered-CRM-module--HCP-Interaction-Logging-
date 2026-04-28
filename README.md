@@ -202,6 +202,7 @@ A custom reducer (`syncFromAI`) performs:
 * Auto-filled structured form
 * Multiple LangGraph tools working
 * End-to-end flow demonstration
+  ![Postman](demo/post.png)
 
 ---
 
