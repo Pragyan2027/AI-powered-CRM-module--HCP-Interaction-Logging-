@@ -203,6 +203,8 @@ A custom reducer (`syncFromAI`) performs:
 * Multiple LangGraph tools working
 * End-to-end flow demonstration
   ![Postman](demo/post.png)
+  ![Server](demo/pos.png)
+  ![Server](demo/neg.png)
 
 ---
 
