@@ -177,6 +177,12 @@ npm run dev
 
 ---
 
+### Architecture
+
+ ![Workflow](demo/architecture.png)
+
+ ---
+
 ##  Technical Highlights
 
 ### 1. Sync Node Strategy
