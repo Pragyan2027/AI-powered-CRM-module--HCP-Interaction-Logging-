@@ -179,7 +179,7 @@ npm run dev
 
 ### Architecture
 
- ![Workflow](demo/architecture.png)
+ ![Workflow](demo/architecture.drawio.png)
 
  ---
 
